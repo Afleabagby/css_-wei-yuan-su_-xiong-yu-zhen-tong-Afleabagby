@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bear</title>
+    <style>
+        
+        *::before,
+        *::after {
+        box-sizing: border-box;
+        }
+
+        #face{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius:50%;
+            background:black;
+            width:300px;
+            height:300px;
+        }
+
+        #face::before{
+            content:'';
+            position:absolute;
+            width:70px;
+            height:70px;
+            background:red;
+            border-radius:50%;
+            bottom:0;
+            top:0;
+            bottom:0;
+            left:-5%;
+            margin:auto;
+        }
+
+        #face::after{
+            content:'';
+            position:absolute;
+            width:70px;
+            height:70px;
+            background:red;
+            border-radius:50%;
+            bottom:0;
+            top:0;
+            bottom:0;
+            right:-5%;
+            margin:auto;
+        }
+
+        .left-ear{
+            position:absolute;
+            width:50px;
+            height:50px;
+            border-radius:50%;
+            background:black;
+            left:10%;
+        }
+        .left-ear::before{
+            content: '';
+            position:absolute;
+            width:35px;
+            height:35px;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom:0;
+            margin:auto;
+            /* border:solid 1px black; */
+            background-color: white;
+            border-radius: 50%;
+        }
+        
+        .right-ear{
+            position:absolute;
+            width:50px;
+            height:50px;
+            border-radius:50%;
+            background:black;
+            right:10%;
+        }
+        .right-ear::before{
+            content: '';
+            position:absolute;
+            width:35px;
+            height:35px;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom:0;
+            margin:auto;
+            /* border:solid 1px black; */
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .left-eye{
+            position:absolute;
+            width:60px;
+            height:60px;
+            border-radius:50%;
+            background:white;
+            left:20%;
+            top:20%;
+        }
+
+        .left-eye::before{
+            content: '';
+            position:absolute;
+            width:40px;
+            height:40px;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom:0;
+            margin:auto;
+            /* border:solid 1px black; */
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .right-eye{
+            position:absolute;
+            width:60px;
+            height:60px;
+            border-radius:50%;
+            background:white;
+            right:20%;
+            top:20%;
+        }
+
+        .right-eye::before{
+            content: '';
+            position:absolute;
+            width:40px;
+            height:40px;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom:0;
+            margin:auto;
+            /* border:solid 1px black; */
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .mouth-nose{
+            position:absolute;
+            width:110px;
+            height:80px;
+            border-radius: 50% / 50%;
+            background:white;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            margin:auto;
+        }
+
+        .mouth-nose::before{
+            content:'';
+            position:absolute;
+            background:black;
+            border-radius: 50% / 50%;
+            width:30px;
+            height:20px;
+            top:10%;
+            left:35%;
+            margin:auto;
+        }
+
+        .mouth-nose::after{
+            content:'';
+            position:absolute;
+            background:black;
+            border-radius: 50% / 50%;
+            width:60px;
+            height:30px;
+            bottom:10%;
+            right:23%;
+            margin:auto;
+        }
+
+        .triangle{
+            position:absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 60px 70px 0 70px;
+            border-color: #ffffff transparent transparent transparent;
+            bottom: 5%;
+            right: 0;
+            left: 0;
+            margin:auto;
+        }
+
+        .sq1{
+            position:absolute;
+            width:40px;
+            height:40px;
+            background:black;
+            transform:rotate(45deg);
+            right:0;
+            bottom:20%;
+            left:0;
+            margin:auto;
+            z-index:2;
+        }
+        .sq2{
+            position:absolute;
+            width:60px;
+            height:20px;
+            background:black;
+            /* top:0; */
+            right:0;
+            bottom:5%;
+            left:0;
+            margin:auto;
+            z-index:2;
+        }
+
+        
+      
+
+    </style>
+</head>
+<body>
+    <div id="face">
+        <div class="ears">
+            <div class="left-ear"></div>
+            <div class="right-ear"></div>
+        </div>
+        <div class="eyes">
+            <div class="left-eye"></div>
+            <div class="right-eye"></div>
+        </div>
+        <div class="sq1"></div>
+        <div class="sq2"></div>
+        <div class="mouth-nose"></div>
+        <div class="triangle"></div>
+    </div>
+
+   
+    <!-- 下面v字在想辦法 -->
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *::before,
+        *::after {
+        box-sizing: border-box;
+        }
+
+        *{
+           margin:0;
+           padding:0;
+           list-style:none;
+           font-family:'微軟正黑體';
+           box-sizing:border-box;
+         }
+        .main{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width:450px;
+            height:100px;
+            border:solid 1px rgb(173, 172, 172);
+            background-image:linear-gradient(to right, white 50%, rgb(255, 255, 155) 0%);
+        }
+
+         .cal{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width:450px;
+            height:100px;
+            background-image:
+            repeating-linear-gradient(90deg, black 0, black 1px, transparent 0, transparent 0.5cm);
+            background-position: .10cm 0;
+            background-repeat: no-repeat;
+            background-size: 100% 10px;
+         }
+
+         .cal::before{
+             position:absolute;
+             content:'';
+             background:linear-gradient(to bottom, 
+            rgba(255, 255, 255, 0.1)0%,
+            rgba(209, 209, 209, 0.3) 20%,
+            rgba(184, 184, 184, 0.5) 50%,
+            rgba(190, 190, 190, 0.3) 70%,
+            rgba(255,255,255,0.1) 100%);
+             width:575px;
+             height:70px;
+             left:-18%;
+             top:0;
+             bottom:0;
+             right:0;
+             margin:auto;
+         }
+         .cal::after{
+            position:absolute;
+             content:'';
+             background:black;
+             border:solid 1px rgb(173, 172, 172);
+             width:50px;
+             height:101px;
+             left:5%;
+             top:0;
+             bottom:0;
+             right:0;
+             margin:auto;
+         }
+
+        .main::before{
+            content:'';
+            position:absolute;
+            left:-10%;
+            bottom:0;
+            top:0;
+            margin:auto;
+            width:70px;
+            height:75px;
+            border:solid 1px rgb(173, 172, 172);
+            background:white;
+            z-index:-1;
+        }
+
+        .main::after{
+            content:'';
+            position:absolute;
+            right:-10%;
+            bottom:0;
+            top:0;
+            margin:auto;
+            width:60px;
+            height:75px;
+            border:solid 1px rgb(173, 172, 172);
+            background:white;
+            z-index:-1;
+        }
+
+        .main p{
+            position:absolute;
+            bottom:0;
+            color:rgba(56, 54, 54, 0.5);
+        }
+
+        .head{
+            position:absolute;
+            width:100px;
+            height:1px;
+            border:solid 1px rgb(173, 172, 172);
+            background:white;
+            right:-30%;
+            bottom:0;
+            top:0;
+            margin:auto;
+            z-index:-1;
+        }
+        .back{
+            position:absolute;
+            width:40px;
+            height:90px;
+            border:solid 1px rgb(173, 172, 172);
+            background:white;
+            left:-18%;
+            bottom:0;
+            top:0;
+            margin:auto;
+            z-index:-1;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="cal"></div>
+        <div class="head"></div>
+        <div class="center"></div>
+        <div class="back"></div>
+        <p>Made in Taiwan</p>   
+    </div>
+</body>
+</html>
